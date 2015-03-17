@@ -7,4 +7,15 @@ and open the template in the editor.
     Created on : Mar 17, 2015, 1:18:55 PM
     Author     : austinchang
 */
+body {
+    font-family: Arial, sans-serif;
+}
+table, tr, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px 20px 10px 20px;
+}
+.movie-rating {
+    text-align: center;
+}
 

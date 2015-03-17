@@ -9,6 +9,7 @@
 <%@ page import="java.io.*,java.util.*,java.sql.*" %>
 <html>
     <head>
+        <link rel="stylesheet" href="styles/common.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Add Movie</title>
     </head>

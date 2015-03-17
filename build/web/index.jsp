@@ -10,6 +10,7 @@
 <%@ page import="java.io.*,java.util.*,java.sql.*" %>
 <html>
     <head>
+        <link rel="stylesheet" href="styles/common.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Movie Ratings</title>
     </head>
@@ -47,10 +48,10 @@
         </form>
             
             <br><br><br><br>
-<table border="1">
+<table>
     <tr>
-        <th>Movie Title</th>
         <th>Rating</th>
+        <th>Movie Title</th>
         <th>Genre</th>
     </tr>                
         <%
@@ -70,9 +71,9 @@
             String movieGenre = rs2.getString("genre");
 %>
 <tr>
-   <td><%= movieTitle %></td>
-   <td><%= movieRating %> / 10</td>
-   <td><%= movieGenre %></td>
+    <td class="movie-rating"><%= movieRating %> / 10</td>
+    <td class="movie-title"><%= movieTitle %></td>
+    <td class="movie-genre"><%= movieGenre %></td>
 </tr>
 <%
         }
