@@ -20,11 +20,13 @@ public class Movie implements Serializable {
     private String title;
     private int rating;
     private int genreId;
+    private String name;
     
     public Movie() {
         title = "";
         rating = 0;
         genreId = 0;
+        name = "";
     }
     
     public String getTitle() {
@@ -49,6 +51,14 @@ public class Movie implements Serializable {
     
     public void setGenreId(String genreId) {
         this.genreId = Integer.parseInt(genreId);
+    }
+    
+    public String getName() {
+        return name;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
     }
 
 }

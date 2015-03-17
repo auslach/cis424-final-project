@@ -9,6 +9,11 @@ and open the template in the editor.
 */
 body {
     font-family: Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+table {
+    margin: 0 auto;
 }
 table, tr, td, th {
     border: 1px solid black;
@@ -17,5 +22,33 @@ table, tr, td, th {
 }
 .movie-rating {
     text-align: center;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+form select, form input {
+    width: 50%;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 10px 0 10px;
+}
+form select {
+    text-align: center;
+    width: 20%;
+}
+form input[type="submit"] {
+    height: 30px;
+    border: 0;
+    background: grey;
+    color: white;
+    font-size: 100%;
+    cursor: pointer;
+}
+form input[type="submit"]:hover {
+    background: #CCC;
+    color: black;
 }
 

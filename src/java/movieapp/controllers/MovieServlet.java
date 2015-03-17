@@ -83,11 +83,13 @@ public class MovieServlet extends HttpServlet {
         String movieTitle = request.getParameter("movieTitle");
         String movieRating = request.getParameter("movieRating");
         String movieGenre = request.getParameter("movieGenre");
+        String movieName = request.getParameter("movieName");
         
         Movie movie = new Movie();
         movie.setTitle(movieTitle);
         movie.setRating(movieRating);
         movie.setGenreId(movieGenre);
+        movie.setName(movieName);
             
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -97,7 +99,7 @@ public class MovieServlet extends HttpServlet {
             Connection con = DriverManager.getConnection(dbURL, username, password);
 
             Statement stmt = con.createStatement();
-            String insert = "INSERT INTO Movie (title, rating, genre_id) VALUES ('" + movieTitle + "'," + movieRating + "," + movieGenre + ")";
+            String insert = "INSERT INTO Movie (title, rating, genre_id, name) VALUES ('" + movieTitle + "'," + movieRating + "," + movieGenre + "," + movieName + ")";
             stmt.executeUpdate(insert);
         } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(MovieServlet.class.getName()).log(Level.SEVERE, null, ex);

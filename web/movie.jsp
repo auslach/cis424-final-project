@@ -14,17 +14,15 @@
         <title>Add Movie</title>
     </head>
     <body>
-        <h1>Thanks for adding a movie!</h1>
+        <h1>Thanks for adding a movie, ${movie.name}!</h1>
         
-        <h3>You added the following movie:</h3>
+        <h3>The following movie has been added.</h3>
         
-        <label>Movie Title</label>
-        <span>${movie.title}<span><br>
-        <label>Movie Rating</label>
-        <span>${movie.rating}<span><br>
-        <label>Movie Genre</label>
-        <span>${movie.genreId}<span><br>
+        <label>Movie: </label>
+        <span><strong>${movie.title}</strong><span><br>
+        <label>Rating: </label>
+        <span>${movie.rating} / 10<span><br>
                 <br><br>
-                <a href="index.jsp">Add another</a>
+                <a href="index.jsp">Add Another</a>
     </body>
 </html>
