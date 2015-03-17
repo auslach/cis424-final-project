@@ -57,7 +57,7 @@
    // Execute a query
 
    stmt = con.createStatement();
-   sql = "SELECT * FROM Movie;";
+   sql = "SELECT * FROM Movie ORDER BY rating DESC;";
    rs = stmt.executeQuery(sql);
    while (rs.next()) {
         String movieTitle = rs.getString("title");

@@ -24,6 +24,6 @@
         <label>Movie Genre</label>
         <span>${movie.genreId}<span><br>
                 <br><br>
-                <a href="/">Add another</a>
+                <a href="index.jsp">Add another</a>
     </body>
 </html>
